@@ -1,0 +1,53 @@
+﻿<Window x:Class="VCPO.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VCPO"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800"
+        ResizeMode="NoResize">
+    <Grid>
+        <Canvas Margin="-10,-10,10,10">
+            <TextBox x:Name="inputN1" Width="100" Height="30"
+         HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="497" Canvas.Top="52"/>
+
+            <TextBox x:Name="inputN2" Width="100" Height="30"
+                 HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="500" Canvas.Top="118"/>
+            <TextBox x:Name="inputN3" Width="100" Height="30"
+                 HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="500" Canvas.Top="184"/>
+
+            <Label Content="Введите размерность массива n1 " Canvas.Left="497" Canvas.Top="10"/>
+
+            <DataGrid x:Name="dataGridA" AutoGenerateColumns="True" 
+                  HorizontalAlignment="Left" Height="400" Width="170" VerticalAlignment="Top"
+                     RowHeight="30"
+                  VerticalGridLinesBrush="Transparent"
+                      CanUserResizeColumns="False" Canvas.Left="10" Canvas.Top="10"/>
+
+            <DataGrid x:Name="dataGridB" AutoGenerateColumns="True" 
+                  HorizontalAlignment="Left" Height="400" Width="117" VerticalAlignment="Center" CanUserResizeColumns="False" Canvas.Left="185" Canvas.Top="10" HeadersVisibility="Column" 
+         
+          RowHeight="30"
+VerticalGridLinesBrush="Transparent"/>
+
+
+            <DataGrid x:Name="dataGridC" AutoGenerateColumns="True" 
+                  HorizontalAlignment="Left" Height="400" Width="160" VerticalAlignment="Center" Canvas.Left="307" Canvas.Top="10"
+                                RowHeight="30"
+VerticalGridLinesBrush="Transparent"
+                      CanUserResizeColumns="False"/>
+
+            <Button Content="Создать" HorizontalAlignment="Left" VerticalAlignment="Center" 
+                Width="100" Height="30" Click="Generate_Click" Canvas.Left="497" Canvas.Top="312"/>
+            <Label Content="Введите размерность массива n2" Canvas.Left="500" Canvas.Top="87" RenderTransformOrigin="0.481,1.799" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label Content="Введите размерность массива n3" Canvas.Left="500" Canvas.Top="153"/>
+
+
+
+
+        </Canvas>
+
+
+    </Grid>
+</Window>
